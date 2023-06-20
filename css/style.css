@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+#loading{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: #89eac6 url('../images/burger.gif') no-repeat center;
+  z-index: 100;
+}
+.container-fluid{
+  padding: 0;
+}
+#home{
+  height: 100vh;
+  background: url("../images/pikopi.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.navbar-brand{
+  padding: 10px 40px;
+  font-family: 'Fredoka One', cursive;
+  color: #ffffff;
+  font-size: 145%;
+  z-index: 300;
+}
+.navbar-brand:hover{
+  color: #844025
+}
+.leafimg{
+  position: absolute;
+  z-index: 200;
+  height: 130px;
+  width: 260px;
+  animation: leaf 2s forwards ease-in-out;
+}
+@keyframes leaf{
+  0%{
+    top: 500px;
+    left: 0px;
+    height: 90vh;
+    width: 90%;
+  }
+  30%{
+    top: 350px;
+    left: 0px;
+    transform: rotate(40deg);
+  }
+  50%{
+    top: 200px;
+    left: 900px;
+    width: 35%;
+    transform: rotate(-40deg);
+  }
+  100%{
+    top: -10px;
+    left: 45px;
+  }
+}
+nav a:hover{
+  color: white;
+}
+nav button div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+.navbar-toggler{
+  padding: 0;
+}
+.navbar-nav{
+  padding: 10px 40px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  color: white;
+  padding: 0;
+  margin-left: 40px;
+  position: relative;
+}
+.navbar-nav .nav-link:hover ,.navbar-expand-lg .navbar-nav .active{
+  color: #844025;
+}
+.hometext{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hometext h1{
+  font-size: 300%;
+}
+.scrolldown{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 100px;
+}
+.scrolldown img{
+  height: 120px;
+  width: 120px;
+}
+.row{
+  margin: 0;
+}
+#cards{
+  background: url('../images/bg-main.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.card .card-img{
+  height: 300px;
+}
+.card-img-overlay{
+  color: white;
+  position: absolute;
+  top: 230px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+  transition: 0.4s;
+}
+.card:hover .card-img-overlay{
+  background-color: rgba(0,0,0,0.9);
+}
+footer {
+  padding: 30px 0;
+  background-color: #222;
+  color: white;
+}
+footer div .row {
+  margin-bottom: 35px;
+}
+footer section h4{
+  line-height: 2;
+  font-size: 1.3em;
+  color: #f0ad4e;
+}
+section a{
+  color: white;
+}
+section i{
+  font-size: 23px;
+  margin: 10px 17px 20px 0;
+}
+section i:hover,section a:hover{
+  color: #844025;
+  text-decoration: none;
+}
+@media (min-width:992px) {
+  .navbar-brand{
+    color: #ffffff;
+    font-size: 170%;
+  }
+  .navbar-brand:hover{
+    color: #844025;
+  }
+}
+@media (max-width:992px) {
+   .navbar-expand-lg .navbar-nav .nav-link{
+      margin: 10px 0;
+  }
+}
+@media (max-width:767px) {
+  #home{
+    height: 310px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    margin: 10px 0;
+  }
+  .navbar-nav{
+    padding: 10px;
+  }
+  .navbar-brand{
+    padding: 5px;
+  }
+  .card .card-img{
+    height: 210px;
+  }
+  .card-img-overlay{
+    top: 140px;
+  }
+}
+
+.what-you-can-do {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.what-you-can-do .subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.what-you-can-do .subtitle h2 {
+  font-size: 32px;
+  color: #333;
+  padding: 10px 20px;
+  background-color: #fff;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.what-you-can-do .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-you-can-do .column {
+  text-align: center;
+  padding: 20px;
+}
+
+.what-you-can-do .column i {
+  font-size: 48px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.what-you-can-do .column .what-you-can-do-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.what-you-can-do .column .what-you-can-do-text {
+  color: #666;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid  #844025;
+  color: white;
+  transition: all 0.3s;
+  padding: 20px 46px;
+  font-size: 18px;
+}
+
+.scroll-button-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-button:hover {
+  background-color: #4B1f0e;
+  color: white;
+}
+
+.scroll-button.clicked {
+  background-color: rgb(135, 88, 0);
+  color: white;
+  transform: scale(1.2);
+  animation: spread 0.3s ease-out;
+}
+
+@keyframes spread {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  100% {
+    width: 130%;
+    height: 130%;
+    opacity: 0;
+  }
+}
+
